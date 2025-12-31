@@ -230,6 +230,13 @@
 
         <strong>Conference Articles</strong><br />
 		<ul>
+          <li class="paper" words="AAAI">
+            <a target="_blank">[AAAI'26] Enhancing All-to-X Backdoor Attacks with Optimized Target Class Mapping</a><br>
+            Lei Wang, Yulong Tian, <b>Hao Han</b>, Fengyuan Xu<br>
+            <b>The 40th Annual AAAI Conference on Artificial Intelligence</b>, Singapore, JAN 20–27 2026 (CCF A)
+          </li>
+        </ul>
+		<ul>
           <li class="paper" words="SC">
             <a target="_blank">[SC'25] Exploring and Mitigating Failure Behavior of Large Language Model Training Workloads in HPC Systems</a><br>
             Pengfei Yu, Jingjing Gu, <b>Hao Han</b>, Dazhong Shen, Bao Wen, Yang Liu,<br>
@@ -476,6 +483,7 @@
 
         <strong>Awards of Mentoring Students</strong><br />
         <p>
+			- 2025，“中国网谷-华为杯”中国研究生网络安全创新大赛，<a href="./awards/2025-wamo.pdf">全国二等奖</a><br />
             - 2024，“中国网谷-华为杯”中国研究生网络安全创新大赛，<a href="./awards/2024-box.jpg">全国二等奖</a><br />
             - 2024，全国大学生信息安全竞赛（作品赛），<a href="./awards/2024-wasm.jpg">全国二等奖</a><br />
             - 2022，中国高校计算机大赛网络技术挑战赛，<a href="./awards/SX2116142_20221001101727.pdf">全国总决赛二等奖</a><br />
@@ -490,6 +498,13 @@
     <div class="row">
       <div class="col-md-10">
         <h3 id="projects">Projects</h3>
+        <a target="_blank"><strong>Model Stealing Attacks and Defenses for Deployed AI Systems</strong></a><br />
+        <p> This research investigates the emerging security threat of AI model stealing and reverse engineering in the context of modern deployment paradigms, where trained AI models are no longer confined to cloud servers but are increasingly deployed on end devices, including mobile phones, embedded systems, edge computing nodes, and even directly within Web browsers through technologies such as WebAssembly and JavaScript-based runtimes. While this deployment trend significantly improves latency, availability, and privacy by enabling local inference, it also exposes AI models to adversaries who can directly interact with, inspect, and manipulate the execution environment. As a result, proprietary models—often representing substantial intellectual property, data curation effort, and training cost—face serious risks from model extraction, parameter reconstruction, architecture inference, and functional imitation attacks. Existing defenses at the algorithmic level are often insufficient in these settings because attackers may gain access to the deployed model artifacts rather than relying solely on black-box queries. Our research focuses on developing new model stealing attacks and a system-level defense strategy that integrates deep learning compilers, binary rewriting, and trusted execution technologies to raise the bar against both static and dynamic model stealing attacks. </p>
+        <img class="img-responsive" src="./img/model_stealing_expo.jpg" alt="" /><br />
+		
+        <a target="_blank"><strong>Program Hardening Framework Against Low-Level Exploitation</strong></a><br />
+        <p>This research topic focuses on program hardening technologies that strengthen software systems against low-level exploitation such as memory corruption attacks. Program hardening seeks to raise the attacker’s cost by fundamentally altering how programs are structured, represented, and executed, rather than relying solely on vulnerability elimination. Within this scope, program partitioning, code obfuscation, and Trusted Execution Environments (TEEs) form three mutually reinforcing pillars. Program partitioning restructures applications by separating security-critical components from less trusted logic, thereby minimizing the attack surface. Obfuscation further complicates exploitation by obscuring control flow, data layouts, and memory access patterns, degrading the attacker’s ability to reliably construct exploits or reuse gadgets even in the presence of vulnerabilities. TEEs complement these software-level defenses by providing hardware-enforced isolation, ensuring that sensitive code and data remain protected even if an attacker gains root privileges.</p>
+		<img class="img-responsive" src="./img/program_hardening_expo.jpg" alt="" /><br />
 
         <a target="_blank"><strong>Attacks and Defenses in Connected Autonomous Vehicles </strong></a><br />
         <p>
@@ -524,21 +539,6 @@
           accelerator, device fingerprinting, lightweight identity authentication, etc.
         </p>
         <img class="img-responsive" src="./img/industrial_problem.jpg" alt="" /><br />
-
-        <a target="_blank"><strong>TEE-based Memory Observer with Software Hardending Techniques</strong></a><br />
-        <p>
-          Memory corruption vulnerabilities are the root cause of many modern attacks. Numerous defenses have mainly
-          focused on mitigating control-data attacks, leaving modern systems and programs vulnerable to non-control-data
-          attacks. The main drawbacks of existing non-control-data attacks are in three aspects: overhead,
-          compatibility, and soundness. To mitigate the potential risk of software attacks, modern applications such as
-          Chrome browser are designed to follow a multi-process model to quarantine programs into different processes so
-          that memory errors in one process do not directly affect other processes. However, there are no automated
-          solutions to partition legacy programs. This project will investigate the inference of data secrecy and their
-          context and automated binary program partitioning based on binary program analysis and rewriting. This project
-          aims to provide a new solution to defend against memory corruption attacks (especially against
-          non-control-data attacks). The involved techniques include TEE (Trusted Execution Environment), Intel SGX, ARM
-          TrustZone, virtualization, program obfuscation, program analysis & binary rewriting, etc.
-        </p>
 
       </div>
     </div>
